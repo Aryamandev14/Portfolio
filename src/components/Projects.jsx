@@ -51,7 +51,7 @@ const Projects = () => {
              <img
   src={project.image}
   alt={project.title}
-  className="rounded-xl shadow-md w-[300px] h-[150px] object-cover transition-transform duration-300 ease-in-out hover:scale-123"
+  className="rounded-xl shadow-md w-[320px] h-[190px] object-cover transition-transform duration-300 ease-in-out hover:scale-123"
 />
             </motion.div>
 
