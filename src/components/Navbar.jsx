@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import logo from "../assets/aryaman.png";
 import { FaLinkedin, FaGithub, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
@@ -37,13 +38,23 @@ const Navbar = () => {
         {/* Nav Links (Desktop) */}
         <div className="hidden lg:flex items-center gap-6 text-lg font-medium">
           {navItems.map((item) => (
-            <button
-              key={item.path}
-              onClick={() => navigate(item.path)}
-              className="text-neutral-200 hover:text-purple-500 transition duration-300"
-            >
-              {item.label}
-            </button>
+            <div key={item.path} className="flex flex-col items-center">
+              <button
+                onClick={() => navigate(item.path)}
+                className={`transition duration-300 ${
+                  location.pathname === item.path
+                    ? "text-purple-500"
+                    : "text-neutral-200 hover:text-purple-500"
+                }`}
+              >
+                {item.label}
+              </button>
+              <hr
+                className={`h-0.5 w-3/5 bg-purple-800 rounded-full mt-1 transition-all duration-300 ${
+                  location.pathname === item.path ? "block" : "hidden"
+                }`}
+              />
+            </div>
           ))}
         </div>
 
@@ -74,7 +85,11 @@ const Navbar = () => {
                 navigate(item.path);
                 setMenuOpen(false);
               }}
-              className="text-neutral-200 text-lg hover:text-purple-500"
+              className={`text-lg ${
+                location.pathname === item.path
+                  ? "text-purple-500"
+                  : "text-neutral-200 hover:text-purple-500"
+              }`}
             >
               {item.label}
             </button>
