@@ -8,22 +8,31 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React, TailwindCSS, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
- 
   {
     year: "May - July 2025",
-    role: "Full Stack Developer Intern",
+    role: "Data Engineering Intern",
     company: "Tech Mahindra",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["React.js", "Prisma", "Node.js", "PostgreSQL"],
+    description: [
+      "Built a real-time, serverless data pipeline on GCP to process over 2 million stock ticker data points daily.",
+      "Architected a platform using Pub/Sub, Dataflow, and BigQuery, reducing data processing latency by 60%.",
+      "Wrote Python-based Pub/Sub pipeline code for scalable ingestion and transformation of streaming data.",
+      "Developed SQL queries on BigQuery for complex data transformations and mutual fund performance analysis."
+    ],
+    technologies: ["BigQuery", "Dataflow", "Pub/Sub", "GCP"],
   },
   {
-    year: "June-July 2024",
+    year: "June - July 2024",
     role: "Full Stack Developer Intern",
     company: "EduTechNest Pvt. Ltd.",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    description: [
+      "Developed full-stack web applications using JavaScript, React.js, and Node.js.",
+      "Managed MongoDB databases and implemented RESTful APIs for CRUD operations.",
+      "Collaborated with product teams to design and prioritize new features and UI enhancements."
+    ],
     technologies: ["HTML", "CSS", "MongoDB", "JavaScript"],
   },
 ];
+
 
 export const PROJECTS = [
   {
