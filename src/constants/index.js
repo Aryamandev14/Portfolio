@@ -11,7 +11,7 @@ export const ABOUT_TEXT = `I’m a full-stack developer passionate about buildin
 export const EXPERIENCES = [
   {
     year: "May - July 2025",
-    role: "Data Engineering Intern",
+    role: "SDE Intern",
     company: "Tech Mahindra",
     description: [
       "Built a real-time, serverless data pipeline on GCP to process over 2 million stock ticker data points daily.",
