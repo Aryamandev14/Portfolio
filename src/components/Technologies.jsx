@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTailwindcss, SiDocker, SiPrisma, SiTypescript, SiJavascript,  SiExpress, SiGithub ,SiRedis, SiPython} from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiDocker, SiPrisma,SiCplusplus, SiTypescript, SiJavascript,  SiExpress, SiGithub ,SiRedis, SiPython} from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { DiPostgresql, DiGithubBadge, DiVisualstudio, DiCode, DiJava, DiGit } from "react-icons/di";
 import { motion } from "framer-motion";
@@ -34,7 +34,10 @@ const techStack = [
   { icon: <DiGit className="text-7xl text-orange-500" title="Git" />, speed: 4.2 },
   { icon: <SiTypescript className="text-7xl text-blue-500" title="TypeScript" />, speed: 4.3 },
   { icon: <SiJavascript className="text-7xl text-yellow-400" title="JavaScript" />, speed: 4 },
-  { icon: <DiCode className="text-7xl text-gray-300" title="C++" />, speed: 5 },
+ 
+
+{ icon: <SiCplusplus className="text-7xl text-blue-400" title="C++" />, speed: 5 }
+,
 ];
 
 const Technologies = () => {
