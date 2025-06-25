@@ -9,7 +9,7 @@ const Contact = () => {
          whileInView={{opacity:1,y:0}}
          initial={{opacity:0,y:-100}}
          transition={{duration:0.5}}
-        className="text-4xl font-semibold mb-6">Get In Touch</motion.h2>
+        className="text-5xl font-semibold mb-6">Get In Touch</motion.h2>
   
         <motion.p 
          whileInView={{opacity:1,x:0}}

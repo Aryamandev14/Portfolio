@@ -9,7 +9,7 @@ const Experience = () => {
         whileInView={{opacity:1,y:0}}
         initial={{opacity:0,y:-100}}
         transition={{duration:1.5}}
-        className='my-20 text-center text-4xl'
+        className='my-20 text-center text-5xl'
       >
         Experience
       </motion.h2>
@@ -32,9 +32,9 @@ const Experience = () => {
               transition={{duration:1.5}}
               className='w-full max-w-xl lg:w-3/4'
             >
-              <h6 className='mb-2 font-semibold text-sm'>
+              <h6 className='mb-2 font-semibold text-xl'>
                 {experience.role} - 
-                <span className='text-md text-purple-100'> {experience.company}</span>
+                <span className='text-2xl text-purple-100'> {experience.company}</span>
               </h6>
 
               {Array.isArray(experience.description) ? (

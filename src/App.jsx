@@ -7,6 +7,7 @@ import Technologies from './components/Technologies'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import { Routes,Route } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -16,12 +17,21 @@ const App = () => {
   </div>
    <div className='container mx-auto px-8'>
    <Navbar/>
-   <Hero/>
+   {/* <Hero/>
    <About/>
    <Technologies/>
    <Experience/>
    <Projects/>
-   <Contact/>
+   <Contact/> */}
+   <Routes>
+    <Route path='/' element={<Hero/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/technologies' element={<Technologies/>}/>
+    <Route path='/experience' element={<Experience/>}/>
+    <Route path='/projects' element={<Projects/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+   </Routes>
+
    </div>
    
     </div>
