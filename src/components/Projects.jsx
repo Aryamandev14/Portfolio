@@ -48,11 +48,11 @@ const Projects = () => {
               viewport={{ once: true }}
               className="w-full lg:w-1/4 flex justify-center"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-xl shadow-md w-[200px] h-[150px] object-cover"
-              />
+             <img
+  src={project.image}
+  alt={project.title}
+  className="rounded-xl shadow-md w-[300px] h-[150px] object-cover transition-transform duration-300 ease-in-out hover:scale-123"
+/>
             </motion.div>
 
             {/* Project Content */}
