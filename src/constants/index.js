@@ -57,11 +57,11 @@ export const PROJECTS = [
     technologies: ["JavaScript", "TailwindCSS", "React"],
   },
   {
-    title: "Blogging Platform",
+    title: "FusionDB",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["TS", "TailwindCSS", "Hono", "React", "PostgreSQL","Prisma"],
+      "This project demonstrates a modern Polyglot Persistence architecture by integrating PostgreSQL, Redis, MongoDB, and Neo4j into a single full-stack application. Each database is used for what it does best, optimizing both performance and scalability.",
+    technologies: ["JS", "TailwindCSS", "React", "PostgreSQL","Redis","MongoDB","Neo4j"],
   },
 ];
 
