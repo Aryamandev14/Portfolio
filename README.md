@@ -11,3 +11,15 @@ Welcome to my personal portfolio website built using **React** and **Tailwind CS
 - **Frontend:** React.js
 - **Styling:** Tailwind CSS
 - **Deployment:** Vercel
+---
+
+## 📸 Features
+
+- Clean and responsive UI
+- About Me section
+- Skills overview
+- Experience 
+- Projects showcase
+- Contact form 
+- Smooth scrolling and transitions
+- Fully responsive design for mobile, tablet, and desktop
